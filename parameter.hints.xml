@@ -1,0 +1,9 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="JavaScript">
+        <added pattern="Element.setAttribute(qualifiedName,value)" />
+      </blacklist>
+    </blacklists>
+  </component>
+</application>
