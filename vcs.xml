@@ -10,8 +10,12 @@
           <option name="url" value="https://avinash29july@bitbucket.org/avinash29july/canvas-generator.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/avinash29july/column-chart.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="E:\Projects" />
+    <option name="cloneParentDir" value="E:\Projects\github" />
   </component>
 </application>
