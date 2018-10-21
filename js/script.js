@@ -50,6 +50,8 @@ const userIdGetData = (queryUrl) => {
     getData(queryUrl)
         .then(data => {
             resData = data;
+            let resData2 =_.filter(resData, 'completed');
+            console.log(resData2,"afasdsa");
             drawTableMap(resData);
         })
 }
@@ -67,8 +69,8 @@ const drawTableMap = (resArr) => {
             }
             return data;
         },
-        className: "dt-body-center"}
-      
+        className: "dt-body-center"
+        }
     ]
    
     $('#table-todo').DataTable({
@@ -82,4 +84,41 @@ const drawTableMap = (resArr) => {
 
     
 }
+google.charts.load('current', {packages: ['corechart', 'bar']});
+
+const drawChart = () => {
+
+    let loadData = google.visualization.arrayToDataTable([
+        ['%','Completed','Incompleted'],
+        ['',80, 20]
+    ]);
+    let options = {
+        chart: {
+            title: 'Completion rate %'
+        },
+
+        
+        vAxis: {
+            minValue: 0,
+            maxValue: 80,
+            title: 'completion rate %',
+            fontSize: '12px'
+        },
+        bars: {groupWidth: "95"}, // Required for Material Bar Charts.
+        width: '100%',
+        height: 500,
+        colors: ['#1F9E77','#DA5E0F'],
+        
+        legend: {
+            position: 'top',
+            textStyle: {
+            fontSize: 12
+        }
+      }
+            
+        };
+    let charts = new google.visualization.ColumnChart(document.getElementById('chart-todo'));
+    charts.draw(loadData, options);
+}
+google.charts.setOnLoadCallback(drawChart);
 
