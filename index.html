@@ -1,10 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link href="css/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>column chart</title>
 </head>
 <body>
-$END$
+<div class="container-fluid">
+    <div class="header row">
+        <div class="col">
+            <h2>column chart</h2>
+        </div>
+    </div>
+    <div class="height-50"></div>
+    <div class="row">
+        <div class="col-sm-4">
+            <select class="custom-select input-width inputGroupSelect" id="selectUserId" onchange="drawChartsTable()">
+                <option selected>Select Id..</option>
+            </select>
+        </div>
+            
+        <div class="col-sm-8">
+            <div class="height-50"></div>
+            <div class="table-responsive"></div>
+                <table id="table-todo" class="display table table-bordered table-striped"></table>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="height-50"></div>
+    
+
+
+    
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/lodash.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/datatables/jquery.dataTables.min.js"></script>
+<script src="js/datatables/dataTables.bootstrap4.min.js"></script>
 </body>
 </html>
