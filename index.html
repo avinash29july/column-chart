@@ -1,56 +1,39 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
-    
-
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link href="css/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-    <title>column chart</title>
+    <title>Todo Chart And Table</title>
 </head>
 <body>
 <div class="container-fluid">
     <div class="header row">
         <div class="col">
-            <h2>column chart</h2>
+            <h2>Todo Chart And Table</h2>
         </div>
     </div>
-    <div class="height-50"></div>
+    <div class="height-20"></div>
     <div class="row">
         <div class="col-sm-4">
             <select class="custom-select input-width inputGroupSelect" id="selectUserId" onchange="drawChartsTable()">
                 <option selected>Select Id..</option>
             </select>
         </div>
-            
         <div class="col-sm-8">
-            <div class="" id="chart-todo"></div>
+            <div id="chart-todo"></div>
             <div class="height-50"></div>
-            <div class="table-responsive"></div>
-                <table id="table-todo" class="display table table-bordered table-striped"></table>
+            <div class="table-responsive background-white"></div>
+                <table id="table-todo" class="display table table-bordered table-striped table-light"></table>
             </div>
-            
         </div>
-        
     </div>
     <div class="height-50"></div>
-    
-
-
-    
     </div>
 </div>
-
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/jquery-3.3.1.slim.min.js"></script>
 <script src="js/lodash.js"></script>
 <script src="js/popper.min.js"></script>
