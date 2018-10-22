@@ -122,7 +122,7 @@ const drawTableMap = (resArr) => {
         {"data":"title", "title": "Todo Title"},
         {"data":"completed", "title": "Completed?", render: function ( data, type, row ) {
             if ( type === 'display' ) {
-                return '<input type="checkbox" class="checkbox-active">';
+                return '<input type="checkbox" class="checkbox-active" disabled>';
             }
             return data;
         },
