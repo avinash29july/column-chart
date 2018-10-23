@@ -129,13 +129,18 @@ const drawTableMap = (resArr) => {
         className: "dt-body-center"
         }
     ]
-    $('#table-todo').DataTable({
+    let options = {
         data: resArr,
         columns: columnDefs,
+        processing: true,
         rowCallback: function ( row, data ) {
             $('input.checkbox-active', row).prop( 'checked', data.completed == 1 );
         },
         retrieve: true
-    });
+    }
+    let dataTable = $('#table-todo').DataTable(options);
+    dataTable.clear();
+    dataTable.rows.add(resArr);
+    dataTable.draw();
 }
 
